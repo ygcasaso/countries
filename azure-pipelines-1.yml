@@ -9,6 +9,12 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+  solution: '**/TestApplication.sln'
+  buildPlatform: 'ANY CPU' # x86
+  buildConfiguration: 'Release'
+  buildversion: 1.0.0
+
 steps:
 - task: NodeTool@0
   inputs:
@@ -21,6 +27,6 @@ steps:
     npm install --save @fortawesome/fontawesome-free
     npm run build
   displayName: 'npm install and build'
-  workingDirectory: '$(Build.ygcasaso/countries)/countryproject'
+  workingDirectory: '/s:countryproject'
   
 
