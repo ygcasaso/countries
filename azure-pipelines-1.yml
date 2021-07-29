@@ -16,7 +16,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-  workingDirectory: countryproject
+  workingDirectory: /home/vsts/work/1/s/countryproject
     npm install
     npm install --save axios vue-router
     npm install --save @fortawesome/fontawesome-free
