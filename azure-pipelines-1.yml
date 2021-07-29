@@ -21,6 +21,6 @@ steps:
     npm install --save @fortawesome/fontawesome-free
     npm run build
   displayName: 'npm install and build'
-  workingDirectory: '$(Build.https://github.com/ygcasaso/countries.git)/countryproject'
+  workingDirectory: '$(Build.ygcasaso/countries)/countryproject'
   
 
